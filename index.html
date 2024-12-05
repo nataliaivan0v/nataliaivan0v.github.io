@@ -1,1 +1,335 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natalia Ivanov | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="resources/flavicon.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            margin-top: 60px;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        #about, #projects, #contact {
+            padding: 3em 0;
+            position: relative; 
+            width: 83%;           
+        }
+
+        #separation {
+            border-bottom: 1px solid darkgray;
+            width: 94%;
+            padding-top: 15px;
+            margin-bottom: 0;
+        }
+
+        h1, h2 {
+            color: black;
+        }
+        .project {
+            background-color: #fff;
+            padding: 1em;
+            margin-bottom: 1em;
+            border-radius: 5px;
+        }
+        .project a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer p {
+            margin: 0;
+        }
+
+
+.topnav {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    position: fixed;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.nav-title {
+    color: black;
+    font-size: 23px;
+    margin-right: auto; 
+    font-family: "Alliance No.2", "Alliance No.1", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.topnav a {
+    float: none; 
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #5A5A5A;
+    position: relative;
+    font-family: Alliance No\.1, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.topnav a:hover {
+    color: black;
+}
+
+.topnav a::before {
+  content:'';
+  width:0%;
+  height:1px;
+  display:block;
+  background-color: black;
+  margin-bottom:3px;
+}
+
+.topnav a:hover::before {
+  width:40%;
+  transition:all .5s;
+}
+
+.about-content {
+    display: flex;
+    align-items: center; 
+    gap: 50px; 
+    text-decoration: none;
+}
+
+#about-me-header {
+    font-family: "Alliance No.2", "Alliance No.1", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 480;
+    color: black;
+    margin-bottom: 20px; 
+    margin-top: 0;
+}
+
+#about-description {
+    margin-bottom: 30px; 
+}
+
+.about-text {
+    flex: 1;
+    font-size: 18px;
+    font-family: Alliance No\.1, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.about-links {
+    font-size: 15px;
+    display: flex;
+    gap: 60px; 
+    color: #5A5A5A;
+}
+
+.about-links a {
+    position: relative;
+    text-decoration: none;
+    color: #5A5A5A;
+    transition: color 0.3s;
+}
+
+.about-links a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.about-links a::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: black;
+    transition: transform 0.5s;
+    transform-origin: right;
+}
+
+.about-links a:hover::after {
+    transform: scaleX(0); 
+}
+
+.about-content img {
+    border-radius: 8%; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.reversi-content {
+    display: flex;
+    align-items: flex-start; 
+    gap: 40px;
+    text-decoration: none;
+    padding-bottom: 50px;
+}
+
+.reversi-text {
+    flex: 1;
+    font-size: 15px;
+    font-family: "Alliance No\.1", system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+#reversi-header {
+    font-family: "Alliance No.2", "Alliance No.1", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 480;
+    margin-top: 26px;
+    margin-bottom: 0;
+}
+
+.bee-content {
+    display: flex;
+    align-items: flex-start; 
+    gap: 40px; 
+    text-decoration: none;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.contact-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px; 
+}
+
+.contact-text {
+    font-size: 15px;
+    color: #5A5A5A;
+    font-family: "Alliance No\.1", system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.email-text {
+    font-size: 15px;
+    color: #5A5A5A;
+    font-family: "Alliance No\.1", system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.location-text {
+    font-size: 15px;
+    color: #5A5A5A;
+    font-family: "Alliance No\.1", system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+footer {
+    font-family: "Alliance No\.1", system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+</style>
+
+</head>
+<body>
+    <div class="topnav">
+        <span class="nav-title">Natalia Ivanov</span>
+        <a href="#about">About</a>
+        <a href="#separation">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <section id="about" class="container">
+        <div class="about-content">
+            <div class="about-text">
+                <p id="about-me-header">About Me</p>
+                <p id="about-description">Hey there! I'm Natalia, a 3rd year at Northeastern University studying Computer Science with a minor in International Affairs. As an aspiring Software Engineer, I'm passionate about leveraging technology to create innovative solutions with global impact. I'm currently seeking internships for Summer and Fall of 2025 and below you can check out some projects I've worked on in the past! Aside from CS, I also enjoy hiking, reading, and travel.</p>
+                <div class="about-links">
+                    <a href="resources/resume.pdf" target="_blank">↪ Resume</a>
+                    <a href="https://www.linkedin.com/in/natalianivanov/" target="_blank">↪ LinkedIn</a>
+                    <a href="https://github.com/nataliaivan0v" target="_blank">↪ GitHub</a>
+                </div>
+            </div>
+
+            <img src="resources/profile.jpg" alt="Profile photo" width="300">
+        </div>
+    </section>
+
+    <section id="separation" class="container"></section>
+
+    <section id="projects" class="container">
+        <p id="about-me-header">Projects</p>
+        
+        <div class="reversi-content" class="zoom-on-scroll">
+            <video width="300" height="300" autoplay loop controls>
+                <source src="resources/reversi.MOV" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="reversi-text">
+                <p id="reversi-header">Reversi</p>
+                <p id="tech-stack"><em>Tech Stack: Java, Java Swing, IntelliJ IDEA</em></p>
+                <p id="reversi-description">I developed a Hexagonal Reversi game in Java, focusing on a modular, object-oriented design that’s scalable and well-tested. The game uses a clear MVC architecture for easy maintenance. It features a GUI that supports both mouse and keyboard inputs, creating a smooth, interactive experience for two players (human or AI). The AI player can be programmed with multiple strategies, adding variety and challenge to gameplay. In this demo, I am playing against an AI player.</p>
+                <div class="about-links">
+                    <a href="https://github.com/nataliaivan0v/Reversi" target="_blank">↪ Repo link</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bee-content">
+            <div class="reversi-text">
+                <p id="reversi-header">Spelling Bee</p>
+                <p id="tech-stack"><em>Tech Stack: Java, Java Swing, IntelliJ IDEA</em></p>
+                <p id="reversi-description">
+                    I recreated the New York Times Spelling Bee game, adding a customizable feature to let players choose which letters are used. I also built an anagram solver that finds all possible words based on the chosen letters and game constraints, making it easy to explore every solution within the puzzle’s rules.</p>
+                <div class="about-links">
+                    <a href="https://github.com/nataliaivan0v/Spelling-Bee" target="_blank">↪ Repo link</a>
+                </div>
+            </div>
+            <video width="600" height="280" autoplay loop controls>
+                <source src="resources/spellingBee.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <section id="separation" class="container"></section>
+
+    <section id="contact" class="container">
+        <p id="about-me-header">Get In Touch</p>
+        
+        <div class="contact-section">
+            <div class="contact-item">
+                <img src="resources/calling.png" alt="Phone Icon" class="contact-icon">
+                <span class="contact-text">+1 (703) 919-5453</span>
+            </div>
+            <div class="contact-item">
+                <img src="resources/email.png" alt="Email Icon" class="contact-icon">
+                <span class="email-text">nataliaivanov2004@gmail.com</span>
+            </div>
+            <div class="contact-item">
+                <img src="resources/pin.png" alt="Email Icon" class="contact-icon">
+                <span class="location-text">Washington D.C & Boston, MA</span>
+            </div>
+        </div>
+
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Natalia Ivanov. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
