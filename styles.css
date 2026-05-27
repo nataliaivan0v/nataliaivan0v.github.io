@@ -20,10 +20,10 @@ header, footer {
     overflow: hidden;
 }
 
-#about, #projects, #contact {
+#about, #proviras, #projects, #contact {
     padding: 3em 0;
-    position: relative; 
-    width: 83%;           
+    position: relative;
+    width: 83%;
 }
 
 #separation {
@@ -254,4 +254,16 @@ footer p {
 footer {
     font-family: "Alliance No\.1", system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 15px;
+}
+
+#proviras-description {
+    margin-bottom: 30px; 
+}
+
+.proviras-content {
+    display: flex;
+    align-items: flex-start; 
+    gap: 40px; 
+    text-decoration: none;
+    padding-bottom: 10px;
 }
