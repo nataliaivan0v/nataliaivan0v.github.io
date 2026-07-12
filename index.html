@@ -53,7 +53,9 @@
   .brand{font-family:var(--disp);font-weight:600;font-size:1.02rem;letter-spacing:-.01em}
   .brand .d{color:var(--magenta)}
   .nav{display:flex;align-items:center;gap:28px;font-family:var(--mono);font-size:.76rem;color:var(--muted)}
-  .nav a{transition:color .15s}
+  .nav a{position:relative;transition:color .15s}
+  .nav a::before{content:"";position:absolute;left:0;top:-6px;width:0;height:1px;background:currentColor;transition:width .5s ease}
+  .nav a:hover::before{width:40%}
   .nav a:hover{color:var(--magenta)}
   @media(max-width:720px){.nav a:not(:last-child){display:none}}
 
@@ -62,15 +64,16 @@
   .hero .eyebrow{margin-bottom:26px}
   .avail{color:var(--magenta)}
   h1{font-family:var(--disp);font-weight:600;font-size:clamp(3rem,9vw,6.4rem);line-height:.98;letter-spacing:-.03em}
+  .type-cursor{display:inline-block;width:.055em;height:.72em;margin-left:.04em;background:var(--magenta);vertical-align:baseline;animation:blink 1s steps(1) infinite}
+  h1.typing .type-cursor{animation:none;opacity:1}
   .thesis{font-family:var(--disp);font-weight:500;font-size:clamp(1.4rem,3.2vw,2.15rem);line-height:1.2;letter-spacing:-.015em;margin-top:28px}
   .thesis .hl{color:var(--magenta)}
   .sub{margin-top:22px;font-size:1.05rem;color:var(--muted);max-width:64ch}
   .sub b{color:var(--ink);font-weight:600}
-  .actions{margin-top:34px;display:flex;flex-wrap:wrap;gap:12px}
-  .btn{font-family:var(--mono);font-size:.8rem;padding:12px 20px;border-radius:4px;border:1px solid var(--line);background:var(--card);transition:.15s;display:inline-flex;align-items:center;gap:8px}
-  .btn:hover{border-color:var(--ink);transform:translateY(-1px)}
-  .btn.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-  .btn.primary:hover{background:var(--magenta);border-color:var(--magenta);color:#fff}
+  .actions{margin-top:34px;display:flex;flex-wrap:wrap;gap:34px}
+  .actions a{position:relative;font-family:var(--mono);font-size:.82rem;color:var(--magenta);padding-bottom:3px}
+  .actions a::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:1px;background:currentColor;transform-origin:right;transition:transform .45s ease}
+  .actions a:hover::after{transform:scaleX(0)}
 
   /* generic section */
   .sec{padding:80px 0;border-top:1px solid var(--line)}
@@ -107,11 +110,11 @@
   .feature p,.feature .stack,.feature .flinks{margin-right:-96px}
   .feature p b{color:#fff;font-weight:600}
   .feature .chip{color:#E4CFC6;border-color:var(--wine-line);background:transparent}
-  .flinks{display:flex;gap:22px;font-family:var(--mono);font-size:.8rem;flex-wrap:wrap}
-  .flinks a{color:var(--magenta);border-bottom:1px solid transparent;transition:.15s}
-  .flinks a:hover{border-color:var(--magenta)}
+  .flinks{display:flex;gap:34px;font-family:var(--mono);font-size:.8rem;flex-wrap:wrap}
+  .flinks a{position:relative;color:var(--magenta);padding-bottom:3px}
+  .flinks a::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:1px;background:currentColor;transform-origin:right;transition:transform .45s ease}
+  .flinks a:hover::after{transform:scaleX(0)}
   .feature .flinks a{color:#F5B4DA}
-  .feature .flinks a:hover{border-color:#F5B4DA}
   @media(max-width:640px){.feature{padding:32px 88px 32px 32px}.feature-logo{top:24px;right:24px;width:52px}.feature p,.feature .stack,.feature .flinks{margin-right:-56px}}
 
   /* agent card w/ terminal */
@@ -164,7 +167,7 @@
   .xp-main .role{font-family:var(--disp);font-weight:600;font-size:1.2rem;letter-spacing:-.01em}
   .xp-main .co{color:var(--muted);font-size:.95rem;margin-left:2px}
   .xp-main .clr{font-family:var(--mono);font-size:.64rem;color:#fff;background:var(--magenta);border-radius:3px;padding:2px 8px;margin-left:8px;letter-spacing:.05em;vertical-align:middle}
-  .xp-main .desc{color:var(--muted);font-size:.94rem;margin-top:8px;max-width:64ch}
+  .xp-main .desc{color:var(--muted);font-size:.94rem;margin-top:8px;max-width:80ch}
   .xp-main .tags{margin-top:12px}
 
   /* contact */
@@ -173,8 +176,10 @@
   .contact h2{font-family:var(--disp);font-weight:600;font-size:clamp(2.2rem,6vw,3.6rem);letter-spacing:-.025em;margin-bottom:16px}
   .contact p{color:var(--muted);margin:0 auto 30px;font-size:1.06rem}
   .contact .mail{font-family:var(--mono);font-size:1.1rem;color:var(--magenta);border-bottom:1px solid var(--magenta);padding-bottom:3px}
-  .socials{margin-top:36px;display:flex;gap:26px;justify-content:center;font-family:var(--mono);font-size:.82rem;color:var(--muted)}
-  .socials a:hover{color:var(--magenta)}
+  .socials{margin-top:36px;display:flex;gap:34px;justify-content:center;font-family:var(--mono);font-size:.82rem;color:var(--magenta)}
+  .socials a{position:relative;padding-bottom:3px}
+  .socials a::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:1px;background:currentColor;transform-origin:right;transition:transform .45s ease}
+  .socials a:hover::after{transform:scaleX(0)}
   footer{border-top:1px solid var(--line);padding:26px 0;font-family:var(--mono);font-size:.72rem;color:var(--faint)}
   footer .wrap{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center}
 
@@ -187,7 +192,7 @@
 
 <div class="topbar">
   <div class="wrap">
-    <div class="brand">Natalia Ivanov<span class="d">.</span></div>
+    <a class="brand" href="#" aria-label="Back to top">Natalia Ivanov<span class="d">.</span></a>
     <nav class="nav">
       <a href="#about">About</a>
       <a href="#agents">Agents</a>
@@ -202,15 +207,15 @@
 <header class="hero">
   <div class="wrap">
     <div class="eyebrow">Based in New York · <span class="avail">available immediately</span></div>
-    <h1>Natalia Ivanov</h1>
+    <h1 aria-label="Natalia Ivanov"><span id="name-typed" aria-hidden="true">Natalia Ivanov</span><span class="type-cursor" aria-hidden="true"></span></h1>
     <p class="thesis">Software engineer building <span class="hl">AI agent infrastructure.</span></p>
-    <p class="sub">CO-FOUNDER · CEO @ PROVIRAS<br>
-        B.S. COMPUTER SCIENCE @ NORTHEASTERN UNIVERSITY<br>
-        PREV SWE @ WAYFAIR · RIVERSIDE RESEARCH</p>
+    <p class="sub">CO-FOUNDER · CEO @ <em>PROVIRAS</em><br>
+        B.S. COMPUTER SCIENCE @ <em>NORTHEASTERN UNIVERSITY</em><br>
+        PREV SWE @ <em>WAYFAIR</em> · <em>RIVERSIDE RESEARCH</em></p>
     <div class="actions">
-      <a class="btn primary" href="./resources/resume.pdf">Resume ↗</a>
-      <a class="btn" href="https://github.com/nataliaivan0v">GitHub ↗</a>
-      <a class="btn" href="https://www.linkedin.com/in/natalianivanov/">LinkedIn ↗</a>
+      <a href="./resources/resume.pdf">Resume ↗</a>
+      <a href="https://github.com/nataliaivan0v">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/natalianivanov/">LinkedIn ↗</a>
     </div>
   </div>
 </header>
@@ -250,10 +255,10 @@
       <span class="tag">Co-founder &amp; Software Engineer · currently building</span>
       <h3>Proviras</h3>
       <div class="role">Cost optimization for AI agents</div>
-      <p>Most agents overspend by routing every step, even routing decisions and tool-argument extraction, to frontier models when cheaper models could handle them just as well.</p>
-      <p>Proviras drops into a <b>LangGraph</b> flow via SDK, captures every LLM call, and <b>shadow-tests smaller models against real production traffic</b> to show teams exactly where they can safely downgrade, with measured equivalence rates and side-by-side examples. I built and shipped the <b>TypeScript SDK</b> (on npm).</p>
+      <p>Many agentic workflows route every step to the most expensive frontier models, even when the simpler, cheaper models could handle the task just as well.</p>
+      <p>Proviras drops into a <b>LangGraph</b> flow via SDK, captures every LLM call, and <b>shadow-tests smaller models against real production traffic</b> to show teams exactly where they can safely downgrade, with measured equivalence rates and side-by-side examples. I built and shipped both the <b>TypeScript</b> and <b>Python</b> SDKs (on npm and PyPI).</p>
       <div class="stack"><span class="chip">TypeScript</span><span class="chip">Python</span><span class="chip">LangGraph</span><span class="chip">Anthropic API</span><span class="chip">PostgreSQL</span></div>
-      <div class="flinks"><a href="https://proviras.info/">Website ↗</a><a href="https://www.npmjs.com/package/proviras-sdk">npm SDK ↗</a><a href="https://www.linkedin.com/company/proviras/">Company ↗</a></div>
+      <div class="flinks"><a href="https://proviras.info/">Website ↗</a><a href="https://www.linkedin.com/company/proviras/">LinkedIn ↗</a><a href="https://www.npmjs.com/package/proviras-sdk">npm SDK ↗</a><a href="https://pypi.org/project/proviras-sdk/">Python SDK ↗</a><a href="https://github.com/Proviras-ai/proviras-sdk">Repo ↗</a></div>
     </div>
 
     <div class="agent reveal">
@@ -306,7 +311,7 @@
         <img class="pcard-media" src="resources/sga.png" alt="SGA Nomination System screenshot">
         <div class="kind">team project · full-stack platform</div>
         <h3>SGA Nomination System</h3>
-        <p>A senator nomination and application platform for 15,000+ Northeastern students and 500+ SGA members. As technical lead I guided a team of 8 engineers, owning architecture through deployment, and ran weekly Agile sprints and code reviews.</p>
+        <p>A senator nomination and application platform for 15,000+ Northeastern students and 500+ SGA members. As a technical lead I led a team of 8 engineers, owning the full lifecycle from architecture decisions through deployment. I ran weekly Agile sprints, wrote tickets, and led code reviews.</p>
         <div class="stack"><span class="chip">TypeScript</span><span class="chip">React</span><span class="chip">NestJS</span><span class="chip">Supabase</span></div>
         <div class="flinks"><a href="https://github.com/nataliaivan0v/nomination-system">Repo ↗</a></div>
       </div>
@@ -317,41 +322,41 @@
 <!-- EXPERIENCE -->
 <section class="sec" id="experience">
   <div class="wrap">
-    <div class="sechead"><span class="secno">03</span><h2>Experience</h2><span class="note">4 roles · 2024–present</span></div>
+    <div class="sechead"><span class="secno">03</span><h2>Experience</h2></div>
     <div class="xp reveal">
 
       <div class="xp-row">
-        <span class="xp-no">01</span><span class="xp-when">2026 → now</span>
+        <span class="xp-no">01</span><span class="xp-when">March 2026 – present</span>
         <div class="xp-main">
-          <span class="role">Co-founder &amp; Software Engineer</span><span class="co">· Proviras</span><span class="clr">active</span>
+          <span class="role">Co-founder &amp; Software Engineer</span><span class="co"> · Proviras</span><span class="clr">curren</span>
           <div class="desc">Building cost-optimization infrastructure for AI agents. Shipped the TypeScript SDK to npm; shadow-test engine launching Sept 2026.</div>
           <div class="tags stack"><span class="chip">TypeScript</span><span class="chip">Python</span><span class="chip">LangGraph</span></div>
         </div>
       </div>
 
       <div class="xp-row">
-        <span class="xp-no">02</span><span class="xp-when">Jul–Dec 2025</span>
+        <span class="xp-no">02</span><span class="xp-when">July 2025 – December 2025</span>
         <div class="xp-main">
-          <span class="role">Software Engineer Co-op</span><span class="co">· Wayfair</span>
+          <span class="role">Software Engineer Co-op</span><span class="co"> · Wayfair</span>
           <div class="desc">Led migrating ticketing out of a 500k+ line monolith into a standalone Java service with Spring, GraphQL, and Kafka on Kubernetes. Cut ticket creation time 75% and build times ~40%.</div>
           <div class="tags stack"><span class="chip">Java</span><span class="chip">Spring</span><span class="chip">GraphQL</span><span class="chip">Kafka</span><span class="chip">k8s</span></div>
         </div>
       </div>
 
       <div class="xp-row">
-        <span class="xp-no">03</span><span class="xp-when">2024–2025</span>
+        <span class="xp-no">03</span><span class="xp-when">February 2024 – December 2025</span>
         <div class="xp-main">
-          <span class="role">Technical Lead &amp; Software Engineer</span><span class="co">· Northeastern SGA</span>
+          <span class="role">Technical Lead &amp; Software Engineer</span><span class="co"> · Northeastern SGA</span>
           <div class="desc">Led a team of 8 engineers building a senator nomination platform for 15,000+ students, owning architecture through deployment. Ran weekly Agile sprints and code reviews.</div>
           <div class="tags stack"><span class="chip">TypeScript</span><span class="chip">React</span><span class="chip">NestJS</span><span class="chip">Supabase</span></div>
         </div>
       </div>
 
       <div class="xp-row">
-        <span class="xp-no">04</span><span class="xp-when">Jul–Dec 2024</span>
+        <span class="xp-no">04</span><span class="xp-when">July 2024 – December 2024</span>
         <div class="xp-main">
-          <span class="role">Software Engineer Co-op</span><span class="co">· Riverside Research</span>
-          <div class="desc">Built features for radar and satellite defense systems in C# / VB.NET across the full SDLC. Held TS/SCI clearance.</div>
+          <span class="role">Software Engineer Co-op</span><span class="co"> · Riverside Research</span>
+          <div class="desc">Built radar and satellite defense-system features in C# / VB.NET across the full SDLC. Resolved data mismatches between government and internal databases, improving query performance by 18%.</div>
           <div class="tags stack"><span class="chip">C#</span><span class="chip">VB.NET</span><span class="chip">Jenkins</span></div>
         </div>
       </div>
@@ -466,6 +471,25 @@
 
   const rio=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');rio.unobserve(e.target);}});},{threshold:.1});
   document.querySelectorAll('.reveal').forEach(el=>rio.observe(el));
+
+  // type out the name in the hero, then remove the cursor
+  (function(){
+    const el=document.getElementById('name-typed');
+    if(!el) return;
+    const h1=el.closest('h1');
+    const cursor=h1.querySelector('.type-cursor');
+    const full=el.textContent;
+    const finish=()=>{ if(cursor) cursor.remove(); };  // no trailing cursor
+    if(reduce){ finish(); return; }         // reduced motion: show name statically
+    el.textContent='';
+    h1.classList.add('typing');             // solid cursor while typing
+    let i=0;
+    (function type(){
+      el.textContent=full.slice(0,i);
+      if(i++<full.length){ setTimeout(type,150); }
+      else { finish(); }                    // done → cursor removed
+    })();
+  })();
 </script>
 </body>
 </html>
