@@ -1,171 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natalia Ivanov | Portfolio</title>
-    <link rel="stylesheet" href="styles.css?v=2">
-    <link rel="icon" href="resources/flavicon.png" type="image/png">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Natalia Ivanov — Software Engineer | AI Agent Infrastructure</title>
+<meta name="description" content="Natalia Ivanov is a software engineer building AI agent infrastructure. Co-founder of Proviras and ex-Wayfair, based in New York and open to new-grad SWE roles.">
+<meta name="author" content="Natalia Ivanov">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23FAF6F0'/><text x='32' y='34' text-anchor='middle' dominant-baseline='central' font-family='Georgia,Times New Roman,serif' font-size='34' font-weight='700' fill='%23C93390'>N.</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
-    <div class="topnav">
-        <span class="nav-title">Natalia Ivanov</span>
-        <a href="#about">About</a>
-        <a href="#proviras">Proviras</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#" aria-label="Back to top">Natalia Ivanov<span class="d">.</span></a>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#agents">Agents</a>
+      <a href="#fullstack">Full-Stack</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Based in New York · <span class="avail">available immediately</span></div>
+    <h1 aria-label="Natalia Ivanov"><span id="name-typed" aria-hidden="true">Natalia Ivanov</span><span class="type-cursor" aria-hidden="true"></span></h1>
+    <p class="thesis">Software engineer building <span class="hl">AI agent infrastructure.</span></p>
+    <p class="sub">CO-FOUNDER · SWE @ <em>PROVIRAS</em><br>
+        B.S. COMPUTER SCIENCE @ <em>NORTHEASTERN UNIVERSITY</em><br>
+        PREV SWE @ <em>WAYFAIR</em> · <em>RIVERSIDE RESEARCH</em></p>
+    <div class="actions">
+      <a href="./resources/resume.pdf">Resume ↗</a>
+      <a href="https://github.com/nataliaivan0v">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/natalianivanov/">LinkedIn ↗</a>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section class="sec" id="about">
+  <div class="wrap">
+    <div class="sechead"><span class="secno">00</span><h2>About</h2></div>
+    <div class="about-grid reveal">
+      <img class="photo" src="./resources/profile.jpg" alt="Portrait of Natalia Ivanov, software engineer" width="300" height="375">
+      <div class="about-txt">
+        <p>Hi, I'm Natalia! I'm a software engineer and recent Computer Science graduate from Northeastern University.</p>
+        <p>My co-ops took me from defense systems to a big monolith-to-services migration at Wayfair, and somewhere along the way I got hooked on the infrastructure layer of AI agents. That turned into Proviras, the startup I co-founded, where I build tooling that helps agent teams cut LLM costs without sacrificing quality.</p>
+        <p>Outside of work you'll find me at the gym, reading literature, or planning my next trip!</p>
+        <div class="facts">
+          <div class="row"><span class="k">focus</span><span class="v">agents · full-stack</span></div>
+          <div class="row"><span class="k">languages</span><span class="v">Python · TS · Java</span></div>
+          <div class="row"><span class="k">agent stack</span><span class="v">LangGraph · LangChain</span></div>
+          <div class="row"><span class="k">based in</span><span class="v">New York</span></div>
+          <div class="row"><span class="k">speaks</span><span class="v">English · Russian</span></div>
+          <div class="row"><span class="k">status</span><span class="v" style="color:var(--magenta)">available now</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AI / AGENTS -->
+<section class="sec" id="agents">
+  <div class="wrap">
+    <div class="sechead">
+      <span class="secno">01</span><h2>AI &amp; Agents</h2>
     </div>
 
-    <section id="about" class="container">
-        <div class="about-content">
-            <div class="about-text">
-                <p id="about-me-header">About Me</p>
-                <p id="about-description">Hey there! I'm Natalia, a recent Northeastern University graduate with a B.S. in Computer Science and a minor in International Affairs. As a Full-Stack Software Engineer, I'm passionate about building agentic workflows and leveraging technology to create innovative solutions with global impact. Check out my projects below! Outside of CS, I enjoy hiking, reading, fitness, and travel.</p>
-                <div class="about-links">
-                    <a href="resources/resume.pdf" target="_blank">↪ Resume</a>
-                    <a href="https://www.linkedin.com/in/natalianivanov/" target="_blank">↪ LinkedIn</a>
-                    <a href="https://github.com/nataliaivan0v" target="_blank">↪ GitHub</a>
-                </div>
-            </div>
+    <div class="feature reveal">
+      <img class="feature-logo" src="resources/proviraslogo.png" alt="Proviras logo">
+      <span class="tag">Co-founder &amp; Software Engineer · currently building</span>
+      <h3>Proviras</h3>
+      <div class="role">Cost optimization for AI agents</div>
+      <p>Many agentic workflows route every step to the most expensive frontier models, even when the simpler, cheaper models could handle the task just as well.</p>
+      <p>Proviras drops into a <b>LangGraph</b> flow via SDK, captures every LLM call, and <b>shadow-tests smaller models against real production traffic</b> to show teams exactly where they can safely downgrade, with measured equivalence rates and side-by-side examples. I built and shipped both the <b>TypeScript</b> and <b>Python</b> SDKs (on npm and PyPI).</p>
+      <div class="stack"><span class="chip">TypeScript</span><span class="chip">Python</span><span class="chip">LangGraph</span><span class="chip">Anthropic API</span><span class="chip">PostgreSQL</span></div>
+      <div class="flinks"><a href="https://proviras.info/">Website ↗</a><a href="https://www.linkedin.com/company/proviras/">LinkedIn ↗</a><a href="https://www.npmjs.com/package/proviras-sdk">npm SDK ↗</a><a href="https://pypi.org/project/proviras-sdk/">Python SDK ↗</a><a href="https://github.com/Proviras-ai/proviras-sdk">Repo ↗</a></div>
+    </div>
 
-            <img src="resources/profile.jpg" alt="Profile photo" width="300">
+    <div class="agent reveal">
+      <div class="agent-info">
+        <div class="kind">open-source · LangGraph agent</div>
+        <h3>Truffle</h3>
+        <p>An 8-node LangGraph agent that surfaces unposted startup jobs. It ingests hiring signals from Hacker News and YC, classifies real openings, and ranks them against a candidate profile into a daily digest.</p>
+        <p>Parallel source fetchers and conditional routing across classification, extraction, scoring, and summarization.</p>
+        <div class="stack"><span class="chip">Python</span><span class="chip">LangGraph</span><span class="chip">Anthropic API</span></div>
+        <div class="flinks"><a href="https://github.com/nataliaivan0v/truffle">Repo ↗</a></div>
+      </div>
+      <div class="term" data-term="truffle">
+        <div class="term-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="ttl">truffle — recorded run</span><span class="replay" role="button" tabindex="0" aria-label="Replay recorded run">↻ replay</span></div>
+        <div class="term-body"></div>
+      </div>
+    </div>
+
+    <div class="agent reveal">
+      <div class="agent-info">
+        <div class="kind">open-source · agentic RAG</div>
+        <h3>Ledger</h3>
+        <p>A LangGraph agent that explains <em>why</em> a stock moved, grounded in retrieved news and SEC filings. It detects unusual price moves, runs a bounded retrieve-grade-refine loop, and verifies every claim against a source before answering.</p>
+        <p>Hybrid retrieval (semantic + BM25) and a citation gate. Analysis and decision-support, not trade prediction.</p>
+        <div class="stack"><span class="chip">Python</span><span class="chip">LangGraph</span><span class="chip">Chroma</span><span class="chip">Anthropic API</span></div>
+        <div class="flinks"><a href="https://github.com/nataliaivan0v/ledger">Repo ↗</a></div>
+      </div>
+      <div class="term" data-term="ledger">
+        <div class="term-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="ttl">ledger — recorded run</span><span class="replay" role="button" tabindex="0" aria-label="Replay recorded run">↻ replay</span></div>
+        <div class="term-body"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FULL-STACK -->
+<section class="sec" id="fullstack">
+  <div class="wrap">
+    <div class="sechead"><span class="secno">02</span><h2>Full-stack apps</h2></div>
+    <div class="grid2">
+      <div class="pcard reveal">
+        <img class="pcard-media" src="resources/noshow.png" alt="No Show app screenshot">
+        <div class="kind">solo project · peer-to-peer marketplace</div>
+        <h3>No Show</h3>
+        <p>A marketplace for trading fitness class spots. Post a spot you can't use and someone else claims it. A smart matching engine on Supabase Realtime routes each spot to the best-fit seeker and advances the waitlist if unclaimed within 30 minutes, secured by row-level security across four Postgres tables.</p>
+        <div class="stack"><span class="chip">TypeScript</span><span class="chip">React</span><span class="chip">Supabase</span><span class="chip">Vite</span></div>
+        <div class="flinks"><a href="https://github.com/nataliaivan0v/No-Show">Repo ↗</a></div>
+      </div>
+      <div class="pcard reveal">
+        <img class="pcard-media" src="resources/sga.png" alt="SGA Nomination System screenshot">
+        <div class="kind">team project · full-stack platform</div>
+        <h3>SGA Nomination System</h3>
+        <p>A centralized platform that streamlines senator nominations and applications for 15,000+ Northeastern students and 500+ SGA members. Students nominate and apply through two forms, with login and role-based access that gives admins a dashboard to review submissions and manage the process end to end.</p>
+        <div class="stack"><span class="chip">TypeScript</span><span class="chip">React</span><span class="chip">NestJS</span><span class="chip">Supabase</span></div>
+        <div class="flinks"><a href="https://github.com/nataliaivan0v/nomination-system">Repo ↗</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="sec" id="experience">
+  <div class="wrap">
+    <div class="sechead"><span class="secno">03</span><h2>Experience</h2></div>
+    <div class="xp reveal">
+
+      <div class="xp-row">
+        <span class="xp-no">01</span><span class="xp-when">March 2026 – present</span>
+        <div class="xp-main">
+          <span class="role">Co-founder &amp; Software Engineer</span><span class="co"> · Proviras</span>
+          <div class="desc">Building cost-optimization infrastructure for AI agents. Shipped the TypeScript SDK to npm and Python SDK to PyPI; shadow-test engine launching Sept 2026.</div>
+          <div class="tags stack"><span class="chip">TypeScript</span><span class="chip">Python</span><span class="chip">LangGraph</span></div>
         </div>
-    </section>
+      </div>
 
-    <section id="separation" class="container"></section>
-
-    <section id="proviras" class="container">
-        <p id="about-me-header">Proviras</p>
-
-        <div class="proviras-content">
-            <div class="reversi-text">
-                <p id="proviras-description">Proviras is my startup, a platform that helps agent teams cut their LLM costs without sacrificing quality. Most agents over-spend by routing every step (routing decisions, tool argument extraction, intermediate summaries) to frontier models like GPT-4 or Claude Opus, when cheaper models could handle those steps just as well. Proviras drops into an agent flow via SDK, captures every LLM call, and shadow-tests smaller models against real production traffic to identify where teams can safely downgrade. The result is a step-by-step report with measured equivalence rates, confidence intervals, and side-by-side examples, giving teams proof rather than guesses.</p>
-                <div class="about-links">
-                    <a href="https://proviras.info/" target="_blank">↪ Website</a>
-                    <a href="https://www.linkedin.com/company/proviras/" target="_blank">↪ LinkedIn</a>
-                    <a href="https://www.npmjs.com/package/proviras-sdk" target="_blank">↪ SDK</a>
-                </div>
-            </div>
-            <img src="resources/Proviras.png" alt="Proviras" width="220">
+      <div class="xp-row">
+        <span class="xp-no">02</span><span class="xp-when">July 2025 – December 2025</span>
+        <div class="xp-main">
+          <span class="role">Software Engineer Co-op</span><span class="co"> · Wayfair</span>
+          <div class="desc">Led migrating ticketing out of a 500k+ line monolith into a standalone Java service with Spring, GraphQL, and Kafka on Kubernetes. Cut ticket creation time 75% and build times ~40%.</div>
+          <div class="tags stack"><span class="chip">Java</span><span class="chip">Spring</span><span class="chip">GraphQL</span><span class="chip">Kafka</span><span class="chip">k8s</span></div>
         </div>
-    </section>
+      </div>
 
-    <section id="separation" class="container"></section>
-
-    <section id="projects" class="container">
-        <p id="about-me-header">Projects</p>
-        
-        <div class="reversi-content" class="zoom-on-scroll">
-            <video width="300" height="300" autoplay loop controls>
-                <source src="resources/reversi.mov" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="reversi-text">
-                <p id="reversi-header">Reversi</p>
-                <p id="tech-stack"><em>Tech Stack: Java, Java Swing, IntelliJ IDEA</em></p>
-                <p id="reversi-description">I developed a Hexagonal Reversi game in Java, focusing on a modular, object-oriented design that’s scalable and well-tested. The game uses a clear MVC architecture for easy maintenance. It features a GUI that supports both mouse and keyboard inputs, creating a smooth, interactive experience for two players (human or AI). The AI player can be programmed with multiple strategies, adding variety and challenge to gameplay. In this demo, I am playing against an AI player.</p>
-                <div class="about-links">
-                    <a href="https://github.com/nataliaivan0v/Reversi" target="_blank">↪ Repo link</a>
-                </div>
-            </div>
+      <div class="xp-row">
+        <span class="xp-no">03</span><span class="xp-when">February 2024 – December 2025</span>
+        <div class="xp-main">
+          <span class="role">Technical Lead &amp; Software Engineer</span><span class="co"> · Northeastern SGA</span>
+          <div class="desc">Led a team of 8 engineers building a senator nomination platform for 15,000+ students, owning architecture through deployment. Ran weekly Agile sprints and code reviews.</div>
+          <div class="tags stack"><span class="chip">TypeScript</span><span class="chip">React</span><span class="chip">NestJS</span><span class="chip">Supabase</span></div>
         </div>
+      </div>
 
-        <div class="bee-content">
-            <div class="reversi-text">
-                <p id="reversi-header">Senate Nominations & Applications</p>
-                <p id="tech-stack"><em>Tech Stack: React, TypeScript, NestJS, Supabase, Monorepo</em></p>
-                <p id="reversi-description">
-                    As a Project Lead, I guided a team of five engineers in building a senator applications and nominations site for Northeastern SGA. We used TypeScript, React, CSS, NestJS, and Supabase for the backend to create a user-friendly platform that improved both the user experience and administrative workflows.</p>
-                <div class="about-links">
-                    <a href="https://senate.northeasternsga.com/" target="_blank">↪ Site link</a>
-                </div>
-            </div>
-            <video width="600" height="280" autoplay loop controls>
-                <source src="resources/sga.mov" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+      <div class="xp-row">
+        <span class="xp-no">04</span><span class="xp-when">July 2024 – December 2024</span>
+        <div class="xp-main">
+          <span class="role">Software Engineer Co-op</span><span class="co"> · Riverside Research</span>
+          <div class="desc">Built radar and satellite defense-system features in C# / VB.NET across the full SDLC. Resolved data mismatches between government and internal databases, improving query performance by 18%.</div>
+          <div class="tags stack"><span class="chip">C#</span><span class="chip">VB.NET</span><span class="chip">Jenkins</span></div>
         </div>
+      </div>
 
-        <div class="bill-content" class="zoom-on-scroll">
-            <video width="300" height="275" autoplay loop controls>
-                <source src="resources/billSplitter.mov" type="video/mp4" id="bill-video">
-                Your browser does not support the video tag.
-            </video>
-            <div class="reversi-text">
-                <p id="reversi-header">Bill Splitter</p>
-                <p id="tech-stack"><em>Tech Stack: Python, HTML, CSS, AWS, Flask</em></p>
-                <p id="reversi-description">I created a Python script that calculates individual meal costs based on dishes ate and/or split. Tax and tip costs are distributed in proportion with individual meal costs. I adapted the script into a user-friendly web application using Flask, integrated HTML and CSS for enhanced user interaction and interface, and deployed on AWS EC2 to ensure scalability and accessibility.
-                    </p>
-                <div class="about-links">
-                    <a href="https://github.com/nataliaivan0v/BillSplitter" target="_blank">↪ Repo link</a>
-                </div>
-            </div>
-        </div>
+    </div>
+  </div>
+</section>
 
-        <div class="bee-content">
-            <div class="reversi-text">
-                <p id="reversi-header">Spelling Bee</p>
-                <p id="tech-stack"><em>Tech Stack: Java, Java Swing, IntelliJ IDEA</em></p>
-                <p id="reversi-description">
-                    I recreated the New York Times Spelling Bee game, adding a customizable feature to let players choose which letters are used. I also built an anagram solver that finds all possible words based on the chosen letters and game constraints, making it easy to explore every solution within the puzzle’s rules.</p>
-                <div class="about-links">
-                    <a href="https://github.com/nataliaivan0v/Spelling-Bee" target="_blank">↪ Repo link</a>
-                </div>
-            </div>
-            <video width="600" height="280" autoplay loop controls>
-                <source src="resources/spellingBeeCompressed.mov" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="eyebrow">Contact</div>
+    <h2>Let's build something.</h2>
+    <p>I'm open to new grad SWE roles and always happy to talk agents, dev tools, or startups.</p>
+    <a class="mail" href="mailto:nataliaivanov2004@gmail.com">nataliaivanov2004@gmail.com</a>
+    <div class="socials">
+      <a href="https://github.com/nataliaivan0v">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/natalianivanov/">LinkedIn ↗</a>
+      <a href="./resources/resume.pdf">Resume ↗</a>
+    </div>
+  </div>
+</section>
 
-        <div class="reversi-content" class="zoom-on-scroll">
-            <img src="resources/NoShow.JPG" height="300">
-            <div class="reversi-text">
-                <p id="reversi-header">No Show App</p>
-                <p id="tech-stack"><em>Tech Stack: Swift, XCode</em></p>
-                <p id="reversi-description">IN PROGRESS</p>
-                <p id="reversi-description">I’m currently developing an iOS app using Swift that helps users avoid no-show or cancellation fees for workout classes. The app lets users upload classes they can’t attend, allowing others to take their spot. Desiging and implementing the entire app myself, this project has been a great opportunity to apply my skills and create a practical solution for myself and other fitness enthusiasts.</p>
-            </div>
-        </div>
+<footer><div class="wrap"><span>© 2026 Natalia Ivanov</span></div></footer>
 
-        <div class="website-content" class="zoom-on-scroll">
-            <div class="reversi-text">
-                <p id="reversi-header">This Personal Website</p>
-                <p id="tech-stack"><em>Tech Stack: HTML, CSS, GitHub Pages</em></p>
-                <div class="about-links">
-                    <a href="https://github.com/nataliaivan0v/nataliaivan0v.github.io" target="_blank">↪ Repo link</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="separation" class="container"></section>
-
-    <section id="contact" class="container">
-        <p id="about-me-header">Get In Touch</p>
-        
-        <div class="contact-section">
-            <div class="contact-item">
-                <img src="resources/calling.png" alt="Phone Icon" class="contact-icon">
-                <span class="contact-text">+1 (703) 919-5453</span>
-            </div>
-            <div class="contact-item">
-                <img src="resources/email.png" alt="Email Icon" class="contact-icon">
-                <span class="email-text">nataliaivanov2004@gmail.com</span>
-            </div>
-            <div class="contact-item">
-                <img src="resources/pin.png" alt="Email Icon" class="contact-icon">
-                <span class="location-text">Washington D.C. & Boston, MA</span>
-            </div>
-        </div>
-
-        
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Natalia Ivanov. All rights reserved.</p>
-    </footer>
-
+<script src="script.js?v=1"></script>
 </body>
 </html>
