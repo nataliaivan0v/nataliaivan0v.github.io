@@ -84,7 +84,8 @@ h1.typing .type-cursor{animation:none;opacity:1}
 
 /* tech tag — squared, not pill */
 .stack{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0}
-.chip{font-family:var(--mono);font-size:.72rem;color:var(--muted);border:1px solid var(--line-card);padding:5px 9px;border-radius:3px;background:var(--bg)}
+.chip{font-family:var(--mono);font-size:.72rem;color:var(--muted);border:1px solid var(--line-card);padding:5px 9px;border-radius:3px;background:var(--bg);transition:color .15s,border-color .15s,background .15s}
+.chip:hover{color:var(--magenta);border-color:var(--magenta);background:var(--magenta-soft)}
 
 /* proviras feature — wine panel */
 .feature{background:var(--wine);color:#F0E4DC;border:1px solid var(--wine);border-radius:8px;padding:44px 140px 44px 44px;position:relative;overflow:hidden;margin-bottom:24px}
@@ -96,6 +97,7 @@ h1.typing .type-cursor{animation:none;opacity:1}
 .feature p,.feature .stack,.feature .flinks{margin-right:-96px}
 .feature p b{color:#fff;font-weight:600}
 .feature .chip{color:#E4CFC6;border-color:var(--wine-line);background:transparent}
+.feature .chip:hover{color:#F5B4DA;border-color:#F5B4DA;background:transparent}
 .flinks{display:flex;gap:34px;font-family:var(--mono);font-size:.8rem;flex-wrap:wrap}
 .flinks a{position:relative;color:var(--magenta);padding-bottom:3px}
 .flinks a::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:1px;background:currentColor;transform-origin:right;transition:transform .45s ease}
